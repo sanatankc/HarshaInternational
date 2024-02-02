@@ -20,13 +20,13 @@ if (cardHoverStyle) {
     w-[357px] h-[333px] max-md:w-[320px] max-md:h-[280px] relative group hover:cursor-pointer deck-card
     [&.active>div:first-child]:rotate-[-4deg]
     [&.active>div:last-child]:rotate-[4.651deg] 
-    [&.active>div]:border-[#EB5133]`,
+    [&.active>div]:border-accent`,
     deckActiveClass
   ]} data-deck-id={id}>
     <div 
       class:list={[`bg-white border rounded-md w-full h-full absolute top-0 left-0 p-2
         rotate-[-2.785deg]  transition-transform max-md:rotate-[-2.785deg]
-        group-hover:rotate-[-4deg] group-hover:border-[#EB5133]
+        group-hover:rotate-[-4deg] group-hover:border-accent
       `, deckHoverClass]}
       style={{
         boxShadow: '0px 0px 18.19317px 0px rgba(0, 0, 0, 0.30)'

@@ -27,7 +27,7 @@ const {
       <div class="selectCustom-trigger">{placeholder}</div>
       <div class="selectCustom-options flex flex-row flex-wrap gap-5 !px-6 justify-between">
         {options.map((option: string) => (
-          <div data-value={option} class="selectCustom-option flex items-center justify-center flex-1 min-w-[80px] !p-2 !px-2 border border-[#C6C6C6] rounded-md cursor-pointer transition-all" >
+          <div data-value={option} class="selectCustom-option flex items-center justify-center flex-1 min-w-[100px] !p-2 !px-2 border border-[#C6C6C6] rounded-md cursor-pointer transition-all" >
             {option}
           </div> 
         ))}
@@ -134,7 +134,7 @@ const {
 }
 
 .selectCustom-trigger:hover {
-  border-color: #5E9ED6;
+  border-color: #4B97E9;
 }
 
 .selectCustom-options {
@@ -163,7 +163,7 @@ const {
 
 .selectCustom-option.isHover,
 .selectCustom-option:hover {
-  background-color: #EB5133;
+  background-color: #4B97E9;
   color: white;
   border-color: #aacfb5;
 }

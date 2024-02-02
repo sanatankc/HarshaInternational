@@ -1,206 +1,179 @@
 html {
   color: black;
-  font-family: 'Circular Std', sans-serif;
+  font-family: 'Proxima Nova', sans-serif;
 }
 
 @font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-Black.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-Black.woff') format('woff');
-  font-weight: 900;
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Black.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Black.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-Bold.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-BoldItalic.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-BoldItalic.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-BlackIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-BlackIt.woff') format('woff');
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-BlackItalic.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-Light.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-LightItalic.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-Medium.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-MediumItalic.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-Regular.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-RegularItalic.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-RegularItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-SemiboldItalic.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-SemiboldItalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Tiempos Headline';
-  src: url('/fonts/tiempos/TiemposHeadline-Semibold.woff2') format('woff2'),
-      url('/fonts/tiempos/TiemposHeadline-Semibold.woff') format('woff');
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Semibold.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Semibold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
-
-
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-BoldItalic.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-BoldItalic.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-SemiboldIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-SemiboldIt.woff') format('woff');
+  font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-BlackItalic.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-BookItalic.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-BookItalic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-Bold.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-Bold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Regular.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Regular.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-MediumItalic.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-MediumItalic.woff') format('woff');
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-RegularIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-RegularIt.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularSpotifyText-Light.woff2') format('woff2'),
-      url('/fonts/circular/CircularSpotifyText-Light.woff') format('woff');
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Light.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Light.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-LightIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-LightIt.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-Thin.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-Thin.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularSpotifyText-LightItalic.woff2') format('woff2'),
-      url('/fonts/circular/CircularSpotifyText-LightItalic.woff') format('woff');
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proximaNova/ProximaNova-ThinIt.woff2') format('woff2'),
+      url('/fonts/proximaNova/ProximaNova-ThinIt.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-Book.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-Book.woff') format('woff');
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Thin.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Thin.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-ThinItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-ThinItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Light.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Light.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-LightItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-LightItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Regular.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-Black.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-Black.woff') format('woff');
-  font-weight: 900;
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-RegularItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Medium.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Medium.woff') format('woff');
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Circular Std';
-  src: url('/fonts/circular/CircularStd-Medium.woff2') format('woff2'),
-      url('/fonts/circular/CircularStd-Medium.woff') format('woff');
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-MediumItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-MediumItalic.woff') format('woff');
   font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-Bold.woff2') format('woff2'),
+      url('/fonts/shape/Shape-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Shape';
+  src: url('/fonts/shape/Shape-BoldItalic.woff2') format('woff2'),
+      url('/fonts/shape/Shape-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
 
 
 

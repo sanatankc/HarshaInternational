@@ -1,10 +1,11 @@
 ---
 import Button from "./system/Button.astro";
 import Text from "./system/Text.astro";
-import logo from "../images/logo.webp";
+import logo from "../images/logo.png";
 import { Image } from "astro:assets";
 
 import PhoneWhite from '../icons/PhoneWhite.svg'
+import PhonePrimary from '../icons/PhonePrimary.svg'
 
 interface Menu {
   title: string;
@@ -101,15 +102,18 @@ const { hideMenu = false, applyNowButtonId = null } = Astro.props
 
 
 <header
-  class="w-screen bg-white py-1 px-14 max-md:px-5 box-border flex flex-row justify-between items-center backdrop-blur-md fixed z-[99]"
+  class="w-screen bg-white py-1 px-14 max-md:px-5 box-border flex flex-row justify-between items-center backdrop-blur-md fixed z-[99] h-[80px]"
+  style={{
+    boxShadow: '0px 1px 7px 0px #8888881c',
+  }}
 >
   {hideMenu ? (
-    <div class="relative z-10 daisy daisy-fixed daisy-1 w-[70px]">
-      <Image src={logo} alt="Glentree's Logo" width={150} />
+    <div class="relative z-10 daisy daisy-fixed daisy-1">
+      <Image src={logo} alt="Harsha's Logo" width={400} class="w-[80px] max-md:w-[80px]" />
     </div>
   ) : (
     <a href="/" class="relative z-10 daisy daisy-fixed daisy-1">
-      <Image src={logo} alt="Glentree's Logo" width={150} />
+      <Image src={logo} alt="Harsha's Logo" width={400} class="w-[80px] max-md:w-[80px]" />
     </a>
   )}
   {!hideMenu && (
@@ -189,17 +193,6 @@ const { hideMenu = false, applyNowButtonId = null } = Astro.props
   )}
   <div class:list={["flex flex-row items-center relative max-md:hidden", hideMenu && 'max-md:!flex']}>
 
-    {applyNowButtonId && (
-      <div class="w-full h-14 bottom-0 left-0 z-10 flex max-md:hidden items-center justify-center gap-4 mr-8" data-pixel-contact-target>
-        <div 
-          class="w-4 h-4"
-        >
-          <Image src={PhoneWhite} alt="Phone" class="w-full h-full object-cover" />
-        </div>
-        <Text type="sm" class="text-white">+91 76763 10000</Text>
-      </div>
-    )}
-
     {applyNowButtonId ? (
       <div
       data-apply-now-button={applyNowButtonId}
@@ -209,7 +202,7 @@ const { hideMenu = false, applyNowButtonId = null } = Astro.props
       </div>
     ) : (
       <a
-        href="https://admissions.glentreeacademy.com"
+        href="/"
         target="_blank"
         class="daisy daisy-fixed daisy-3"
       >
@@ -230,6 +223,8 @@ const { hideMenu = false, applyNowButtonId = null } = Astro.props
       </form>
   
     </div>
+
+
     <div
       class="mobileMenu absolute top-0 left-0 w-screen h-screen bg-black flex flex-col pt-20 overflow-scroll"
       class="max-md:visible hidden"
