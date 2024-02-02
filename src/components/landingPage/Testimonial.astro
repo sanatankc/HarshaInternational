@@ -8,6 +8,9 @@ import Button from '../system/Button.astro';
 import Constrain from '../system/Constrain.astro';
 import Text from '../system/Text.astro';
 import { Image } from 'astro:assets';
+import HarshaTestimonial1 from '../../images/HarshaTestimonial1.jpg'
+import HarshaTestimonial2 from '../../images/HarshaTestimonial2.jpg'
+import HarshaTestimonial3 from '../../images/HarshaTestimonial3.jpg'
 
 import TestimonicalCard from './TestimonialCard.astro';
 
@@ -15,17 +18,23 @@ import YoutubeEmbed from '../YoutubeEmbed.astro'
 
 const testimonials = [
     {
-      image: testimonial1,
-      quote: "We are parents of Aarav Patil (5th std) and Aayush Patil (1st std). The school's commitment to both offline and virtual classes, vibrant extracurricular activities, and academically competitive syllabus demonstrate its dedication to holistic education",
-      author: 'Rohini and Kishor Patil',
-      role: 'Parents'
+      image: HarshaTestimonial1,
+      quote: "Education is that which brings out the real talent and moulds the behavior of the student. This is exactly what our Harsha International Public School does by making our kids take part in various activities like exhibitions, Olympiads, drawing, dance, etc.",
+      author: 'Prashant',
+      role: 'Parent of Arya and Arpitha (Grade 3)'
     },
     {
-      image: testimonial2,
-      quote: "Grateful for the positive impact on my son, Rohith – his learning attitude and confidence have flourished under your dedicated guidance. The supportive environment and regular communication from the Winmore Academy team are truly appreciated.",
-      author: 'Shwetha',
-      role: 'M/O Rohith S Manegar, Class VII'
+      image: HarshaTestimonial2,
+      quote: "I think that the school is great for my child. My child’s progress is amazing, he really enjoys coming to school. He comes home and talks about what he is being taught and the teachers have supported and cared for my child. Overall, my child has progressed massively.",
+      author: 'Madhu Pujar',
+      role: 'Parent of Samarth Pujar (Grade 1)'
     },
+    // {
+    //   image: HarshaTestimonial3,
+    //   quote: "The academics are exceptional but even better the character development program. The teachers are true mentors and are loving and supportive, always accessible to guide us.",
+    //   author: 'Aman Choudhary',
+    //   role: 'XII Science'
+    // },
   ]
 
 ---
