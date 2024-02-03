@@ -34,9 +34,9 @@ import slide3 from "../images/hero/8.png";
 
 import slide4 from "../images/hero/2.jpg";
 
-import slide1MB from "../img/slides/1Mb.png";
-import slide2MB from "../img/slides/2Mb.png";
-import slide3MB from "../img/slides/3Mb.png";
+import slide1MB from "../images/hero/mb/3.jpg";
+import slide2MB from "../images/hero/mb/4.jpg";
+import slide3MB from "../images/hero/mb/8.png";
 
 import Ticker from '../components/Ticker.astro'
 
@@ -182,17 +182,15 @@ const infra = [
           <div class="w-full absolute top-0 left-0 max-md:block hidden h-[74vh] z-[2]">
             <Slide
               slides={[
-                { image: slide1, position: 'top' },
-                { image: slide2, position: 'top' },
-                { image: slide3, position: 'top' }
+                { image: slide1MB, position: 'top' },
+                { image: slide2MB, position: 'top' },
+                { image: slide3MB, position: 'top' }
               ]}
               id="resiter-page-hero-mb"
             />
-          </div>
-
-          <div 
+            <div 
             class="
-              absolute w-full h-[40vh] top-0 left-0
+              absolute w-full h-[15vh] bottom-0 left-0
               hidden
               max-md:block
               bg-red-100
@@ -200,9 +198,11 @@ const infra = [
               opacity-60
             "
             style={{
-              background: 'linear-gradient(0deg, rgba(59, 138, 224, 0.00) 72.74%, #3B8AE0 90.29%);',
+              background: 'linear-gradient(180deg, rgba(59, 138, 224, 0.00) 0.74%, #3B8AE0 50.29%);',
             }}
           />
+          </div>
+
           <div 
             class="
               absolute w-full h-full top-0 left-0
@@ -219,7 +219,7 @@ const infra = [
 
           <div class="h-full flex flex-row items-end relative z-20 self-end max-md:self-start max-md:w-full justify-center">
             <div class="flex flex-col items-start mb-10 max-md:mb-0">
-              <Text type="h1" class="text-white leading-[120%] max-md:text-center">Unveiling Potential: <br/><span class="max-md:!text-primaryYellow">Journey of Discovery</span></Text>
+              <Text type="h1" class="text-white leading-[120%] max-md:text-center">Unveiling Potential<span class="max-md:hidden inline">:</span> <br/><span class="!text-white">Journey of Discovery</span></Text>
               <!-- <Text type="lg" class="text-white">Registrations Open for AY 2024-25</Text> -->
             </div>
           </div>
@@ -236,14 +236,14 @@ const infra = [
 
       <div class='w-full p-14 text-black bg-white flex flex-col items-center max-md:p-6'>
         <Text type='h2' class='mt-3 text-black'>The Hips <span class='text-accent'>Mantra</span></Text>
-        <Text type="base" class="mt-6 text-center w-[70%]">At HIPS, we care about your child's happiness and safety. Our friendly environment helps them grow and succeed. We're here to support your child, making sure they thrive and enjoy their time with us.</Text>
+        <Text type="base" class="mt-6 text-center w-[70%] max-md:w-full">At HIPS, we care about your child's happiness and safety. Our friendly environment helps them grow and succeed. We're here to support your child, making sure they thrive and enjoy their time with us.</Text>
 
-        <div class="flex flex-col justify-center gap-[40px] max-md:gap-3 w-full mt-[40px]">
+        <div class="flex flex-col justify-center gap-[40px] max-md:gap-3 w-full mt-[40px] max-md:mt-[20px]">
           <div class="flex flex-row justify-center max-md:flex-col w-full gap-[48px] text-white">
             <Image
               alt="The Hips Mantra"
               src={slide4}
-              class="w-full h-[458px] rounded-[12px] object-cover object-[1%_30%]"
+              class="w-full h-[458px] max-md:h-[350px] rounded-[12px] object-cover object-[1%_30%]"
               width={1280}
             />
           </div>
@@ -291,7 +291,7 @@ const infra = [
 
     <Facilities />
 
-    <div class="p-8 h-[400px] max-md:p-8 counter-stat flex flex-col max-md:flex-col justify-center items-center w-full relative gap-4">
+    <div class="p-8 h-[400px] max-md:p-8 counter-stat flex flex-col max-md:flex-col justify-center items-center max-md:items-start max-md:justify-end w-full relative gap-4 max-md:gap-2">
 
       <!-- <Image src={harshaSchoolBg} alt="blob background" class="absolute top-0 left-0 w-full h-full object-cover -z-10" /> -->
       <video class="w-full h-full object-cover object-top absolute top-0 left-0" loop playsinline muted poster={harshaSchoolBg.src} autoplay>
@@ -306,9 +306,9 @@ const infra = [
           <!-- <Text type="lg" class="text-white">Registrations Open for AY 2024-25</Text> -->
         </div>
       </div>
-      <div class="hidden max-md:block pt-6 "></div>
+      <div class="hidden max-md:block pt-0"></div>
       <div
-        class="flex flex-column items-end flex-shrink-0"
+        class="flex flex-column items-end max-md:items-start flex-shrink-0"
         >
           <a
           href="https://www.youtube.com/watch?v=h7-j1iGBl-Y"
@@ -321,9 +321,9 @@ const infra = [
     </div>  
 
     <div class="py-8 w-full bg-[rgba(255,199,88,0.2)]">
-      <div class="px-[120px] max-md:px-[20px]">
-        <Text type='h2' class='mt-3'>Infrastructure <span>@ HIPS</span></Text>
-        <Text type='base' class='mt-3 max-w-[730px] w-[80%]'>
+      <div class="px-[120px] max-md:px-[20px] flex flex-col items-start max-md:items-center">
+        <Text type='h2' class='mt-3 max-md:text-center'>Infrastructure <span>@ HIPS</span></Text>
+        <Text type='base' class='mt-3 max-w-[730px] w-[80%] max-md:w-full max-md:text-center'>
           Welcome to our lively campus in Bangalore, where we celebrate every student's voice. With world-class facilities, a massive playground, and proximity to the city center, your child will thrive in a nurturing environment.
         </Text>
         <div class="pt-8" />

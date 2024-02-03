@@ -10,7 +10,7 @@ const slideId = 'slide' + id
 ---
 
 <Modal openDefault={Boolean(currentLink === link && link && currentLink)} link={link} closeLink={closeLink} id={id} class="h-screen backdrop-blur-sm p-9 max-md:p-0" containerClass="max-md:flex max-md:items-center">
-  <div class="bg-white rounded-md w-full h-full max-md:h-auto p-3 max-md:p-0">
+  <div class="bg-white rounded-md w-full h-full max-md:h-auto p-3 max-md:pt-0 max-md:p-0">
     <div class="w-full h-full relative rounded-md">
       {gallery.map((slide: {
         src: string,

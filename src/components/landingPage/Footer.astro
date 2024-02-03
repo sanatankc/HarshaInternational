@@ -74,11 +74,13 @@ import theDotStudioLogo from '../../images/theDotStudioLogo.svg'
             <div class='w-5 flex-shrink-0'>
               <Image src={phoneIcon} alt="Phone Icon" class="w-full h-full">
             </div>
-            <a target='_blank' href='tel:+918028023600' class="hover:underline"><Text type={'regular'} class='ml-2'>+91 80 2802 3600</Text></a>
-            <Text type="base">,</Text>
-            <a target='_blank' href='tel:+919483520215' class="hover:underline"><Text type={'regular'} class='ml-2'>+91 94835 20215</Text></a>
-            <Text type="base">,</Text>
-            <a target='_blank' href='tel:+919483520216' class="hover:underline"><Text type={'regular'} class='ml-2'>+91 94835 20214</Text></a>
+            <div class="flex flex-row max-md:flex-col max-md:gap-1 max-md:gap-0">
+              <a target='_blank' href='tel:+918028023600' class="hover:underline"><Text type={'regular'} class='ml-2'>+91 80 2802 3600</Text></a>
+              <Text type="base" class="block max-md:hidden">,</Text>
+              <a target='_blank' href='tel:+919483520215' class="hover:underline"><Text type={'regular'} class='ml-2'>+91 94835 20215</Text></a>
+              <Text type="base" class="block max-md:hidden">,</Text>
+              <a target='_blank' href='tel:+919483520216' class="hover:underline"><Text type={'regular'} class='ml-2'>+91 94835 20214</Text></a>
+            </div>
           </div>
 
           <div class='flex flex-row items-start mb-3 '>
