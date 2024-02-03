@@ -28,13 +28,13 @@ import hipsMantra from '../images/hipsMantra.png'
 // import slide2 from "../images/slides/2.png";
 // import slide3 from "../images/slides/3.png";
 
-import slide1 from "../images/hero/3.jpg";
+import slide1 from "../images/hero/9.jpg";
 import slide2 from "../images/hero/4.jpg";
 import slide3 from "../images/hero/8.png";
 
 import slide4 from "../images/hero/2.jpg";
 
-import slide1MB from "../images/hero/mb/3.jpg";
+import slide1MB from "../images/hero/mb/9.jpg";
 import slide2MB from "../images/hero/mb/4.jpg";
 import slide3MB from "../images/hero/mb/8.png";
 
@@ -71,12 +71,18 @@ import AcademicCard from '../components/AcademicCard.astro';
 import underlineSVG from '../img/underline.svg'
 import BentoGrid from '../components/BentoGrid.astro';
 
-import auditorium from '../images/infra/auditorium.png'
-import chemistryLab from '../images/infra/chemistryLab.png'
-import computerLab from '../images/infra/computerLab.png'
+// import auditorium from '../images/infra/auditorium.png'
+import auditorium from '../images/extraCurricular/auditorium.jpg'
+// import chemistryLab from '../images/infra/chemistryLab.png'
+import computerLab from '../images/infra/computerLab.jpg'
 import NIITMathLab from '../images/extraCurricular/math-lab.jpg'
 import physicsLab from '../images/infra/physicsLab.png'
-import smartClass from '../images/infra/smartclass.png'
+import library from '../images/infra/library.jpg'
+import smartClass from '../images/infra/smartclass.jpg'
+
+import chemistryLab from '../images/extraCurricular/chemistry-lab.jpg'
+import biologyLab from '../images/extraCurricular/biology-lab.jpg'
+
 
 import campusTour from '../images/campusTour.mp4'
 
@@ -121,6 +127,11 @@ const infra = [
     image: smartClass,
   },
   {
+    text: 'Library',
+    alt: 'Library',
+    image: library,
+  },
+  {
     text: 'NIIT Math Lab',
     alt: 'NIIT Math Lab',
     image: NIITMathLab,
@@ -134,6 +145,11 @@ const infra = [
     text: 'Chemistry Lab',
     alt: 'Chemistry Lab',
     image: chemistryLab,
+  },
+  {
+    text: 'Biology Lab',
+    alt: 'Biology Lab',
+    image: biologyLab,
   },
   {
     text: 'Auditorium',
@@ -252,8 +268,8 @@ const infra = [
           <div class="flex flex-row justify-center max-md:flex-col w-full gap-[48px] text-white">
             <Image
               alt="The Hips Mantra"
-              src={slide4}
-              class="w-full h-[458px] max-md:h-[350px] rounded-[12px] object-cover object-[1%_30%]"
+              src={hipsMantra}
+              class="w-full h-[458px] max-md:h-[350px] rounded-[12px] object-cover object-[1%_30%] max-md:object-[65%_1%]"
               width={1280}
             />
           </div>
@@ -473,7 +489,6 @@ const infra = [
   };
   function isInViewport(element) {
       const rect = element.getBoundingClientRect();
-      console.log(rect.bottom)
       return (
           rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
       );
