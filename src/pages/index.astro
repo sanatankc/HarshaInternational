@@ -78,7 +78,7 @@ import computerLab from '../images/infra/computerLab.jpg'
 import NIITMathLab from '../images/extraCurricular/math-lab.jpg'
 import physicsLab from '../images/infra/physicsLab.png'
 import library from '../images/infra/library.jpg'
-import smartClass from '../images/infra/smartclass.jpg'
+import smartClass from '../images/infra/smartClass.jpg'
 
 import chemistryLab from '../images/extraCurricular/chemistry-lab.jpg'
 import biologyLab from '../images/extraCurricular/biology-lab.jpg'
@@ -489,6 +489,7 @@ const infra = [
   };
   function isInViewport(element) {
       const rect = element.getBoundingClientRect();
+      console.log(rect.bottom)
       return (
           rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) 
       );
