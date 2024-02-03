@@ -6,23 +6,21 @@ import DeckCard from '../DeckCardWithGalleryCaption.astro';
 import bulletStar from '../../images/bulletStar.svg'
 
 import basketball from '../../images/basketball.png'
-import dance from '../../images/dance.png'
-import openSpace from '../../img/school/openSpace.jpg'
-import cricketNet from '../../img/school/cricketNet.jpg'
-import football from '../../img/school/football.jpg'
-import basketBall from '../../img/school/basketBall.jpg'
+// import dance from '../../images/dance.png'
 
-import music from '../../images/music.png'
-import theatre from '../../images/theatre.png'
-import digitalClassroom from '../../img/school/digitalClassroom.jpg'
-import openCourtyard from '../../img/school/openCourtyard.jpg'
-import computerLab from '../../img/school/computerLab.jpg'
-import scienceLab from '../../img/school/scienceLab.jpg'
-import library from '../../img/school/library.jpg'
-import musicRoom from '../../img/school/musicRoom.jpg'
-import bus from '../../img/school/bus.jpg'
+// import music from '../../images/music.png'
+// import theatre from '../../images/theatre.png'
 
-import facilityTemp from '../../image/facilities/temp.png'
+import art from '../../images/coscholastics/art.png'
+// import dance from '../../images/coscholastics/dance.png'
+import music from '../../images/coscholastics/music.png'
+import yoga from '../../images/coscholastics/yoga.png'
+import dance from '../../images/extraCurricular/dance.jpg'
+
+import theatre from '../../images/clubs/theatre.png'
+import math from '../../images/extraCurricular/mathLab1.jpg'
+import language from '../../images/extraCurricular/language.jpg'
+import photography from '../../images/extraCurricular/library-kid.jpg'
 
 
 const deckCardWithDescriptionFacility = [
@@ -32,35 +30,20 @@ const deckCardWithDescriptionFacility = [
         "description": "Dancing, with its rhythms and practice, connects mind, body, and soul, teaching discipline for life."
     },
     {
-        "src": basketball,
-        "caption": "Athletics",
-        "description": "Promoting overall well-being, our athletic club, led by skilled instructors, fosters sports mastery, propelling students to state and national competitions."
+        "src": yoga,
+        "caption": "Yoga",
+        "description": "Promoting a healthy life, our Yoga teachers guide students through meditation techniques to ease academic stress and enhance overall well-being."
+    },
+    {
+        "src": music,
+        "caption": "Vocal and Instrumental Music",
+        "description": "Play an instrument or sing for a memory boost, stress relief, and confidence, with HIPS providing focused training in both practical and theoretical aspects."
+    },
+    {
+        "src": art,
+        "caption": "Art",
+        "description": "Artistic expression, like painting or drawing, allows one to creatively release emotions, providing a freeing escape from stress and limitations."
     }
-    // {
-    //     "src": scienceLab,
-    //     "caption": "Composite Science Laboratories",
-    //     "description": "Enhance flexibility, balance, and concentration with our Yoga & Gymnastics programs, promoting physical and mental well-being."
-    // },
-    // {
-    //     "src": computerLab,
-    //     "caption": "State-of-the-art ICT suites",
-    //     "description": "Shape creativity and relax the mind with our pottery club, learning the art of molding clay into beautiful forms."
-    // },
-    // {
-    //     "src": library,
-    //     "caption": "Well Stocked Libraries",
-    //     "description": "Build and program robots in our Robotics Club, blending science and technology for innovative problem-solving skills."
-    // },
-    // {
-    //     "src": musicRoom,
-    //     "caption": "Dedicated language and music rooms",
-    //     "description": "Join the crusade to protect our planet with the Environment Club, engaging in sustainability projects and green practices."
-    // },
-    // {
-    //     "src": bus,
-    //     "caption": "GPS-enabled Bus Services",
-    //     "description": "Learn the essentials of home management and nutrition in our Home Science Club, empowering practical life skills."
-    // },
 ]
 
 const deckCardWithDescriptionClub = [
@@ -69,53 +52,58 @@ const deckCardWithDescriptionClub = [
         "caption": "Theatre",
         "description": "Our theatre club provides students with hands-on experience in acting, script writing, makeup, set designing, and more, led by industry experts."
     },
+    // {
+    //     "src": theatre,
+    //     "caption": "Theatre",
+    //     "description": "Our theatre club provides students with hands-on experience in acting, script writing, makeup, set designing, and more, led by industry experts."
+    // },
     {
-        "src": music,
-        "caption": "Vocal and Instrumental Music",
-        "description": "Play an instrument or sing for a memory boost, stress relief, and confidence, with HIPS providing focused training in both practical and theoretical aspects."
-    }
+        "src": photography,
+        "caption": "Photography",
+        "description": "Photography is an art of capturing emotions and telling stories; our expert instructor guides students in mastering technical aspects for impactful images."
+    },
+    {
+        "src": math,
+        "caption": "Mathletes",
+        "description": "Join our mathletes club, where we make maths fun and help students fall in love with the subject through interactive teaching methods."
+    },
     // {
-    //     "src": football,
-    //     "caption": "Floodlit football ground",
-    //     "description": "Enhance flexibility, balance, and concentration with our Yoga & Gymnastics programs, promoting physical and mental well-being."
+    //     "src": theatre,
+    //     "caption": "Athletics",
+    //     "description": "Promoting overall well-being, our athletic club, led by skilled instructors, fosters sports mastery, propelling students to state and national competitions."
     // },
     // {
-    //     "src": basketBall,
-    //     "caption": "Basketball Courts",
-    //     "description": "Shape creativity and relax the mind with our pottery club, learning the art of molding clay into beautiful forms."
+    //     "src": theatre,
+    //     "caption": "Anti Bully",
+    //     "description": "Launching an anti-bullying club to empower students in combatting the global issue and supporting peers facing bullying."
     // },
+    {
+        "src": language,
+        "caption": "Language",
+        "description": "At our language club, join us for interactive language learning, where we explore diverse languages as a hobby or a tool for global communication."
+    },
     // {
-    //     "src": facilityTemp,
-    //     "caption": "Skating Rings",
-    //     "description": "Build and program robots in our Robotics Club, blending science and technology for innovative problem-solving skills."
-    // },
-    // {
-    //     "src": facilityTemp,
-    //     "caption": "Chess",
-    //     "description": "Join the crusade to protect our planet with the Environment Club, engaging in sustainability projects and green practices."
-    // },
-    // {
-    //     "src": facilityTemp,
-    //     "caption": "Table Tennis",
-    //     "description": "Learn the essentials of home management and nutrition in our Home Science Club, empowering practical life skills."
-    // },
+    //     "src": theatre,
+    //     "caption": "Home Science",
+    //     "description": "Home science focuses on maximising family satisfaction through effective resource use, covering areas like food, nutrition, and human development."
+    // }
 ]
 
 ---
-<div class="py-14 max-md:py-8 relative text-center flex flex-col items-center bg-white" style={{
+<div class="py-14 max-md:py-8 relative text-center flex flex-col items-center text-white bg-white" style={{
   background: 'rgba(59, 138, 224, 0.06)',
 }}>
   <!-- <Image src={overviewRegisterPageBG} class='w-screen h-[130px] max-md:h-[60px] bg-cover bg-top absolute top-0 left-0 -z-1' role="presentation" alt="decoration" /> -->
   <!-- <div class="p-4 max-md:p-1" /> -->
     <Text type='h2' class='mt-3 text-black'><span>Customised </span>Learning</Text>
-    <Text type="base" class="mt-[16px] text-center max-w-[65%] max-md:w-full">Explore a variety of student clubs, offering personalized academic paths. Delve into a world of colorful co-curricular activities designed for your child's individual growth.</Text>
+    <Text type="base" class="mt-[16px] text-center max-w-[65%] max-md:max-w-[90%] max-md:w-full">Explore a variety of student clubs, offering personalized academic paths.</Text>
     <p class="p-3" />
-  <Constrain class="flex flex-col w-full items-center gap-8">  
+  <Constrain class="flex flex-col w-full items-center gap-8 max-md:gap-4">  
     <div class="flex flex-row-reverse gap-[64px] w-full justify-between mt-12 text-black max-w-[1170px] max-md:w-full max-md:flex-col max-md:items-center">
       <div class="flex flex-col items-start text-left max-md:order-2 max-md:px-8">
         <Text type="h3" class="tracking-[-0.96px]"><span>Co-Scholastic</span> Activities</Text>
         <div class="pt-4" />
-        <Text type="base">Dive into a world of possibilities with a colourful range of co-curricular activities tailored for your child's personal growth</Text>
+        <Text type="base">Discover many opportunities with a wide range of co-curricular activities designed for your child's personal growth.</Text>
         <div class="pt-[30px]" /> 
         <div class="flex flex-row items-center">
           <div class="w-[16px] h-[18px]">
@@ -146,7 +134,7 @@ const deckCardWithDescriptionClub = [
         </div>
         <div class="pt-[32px]" /> 
         <div class="cursor-pointer" data-modal-target="campus-facility2" data-target-deck="deck-campus-facility2">
-          <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-bold'>VIEW ALL FACILITIES</Text>
+          <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-[600]'>VIEW ALL FACILITIES</Text>
         </div>
       </div>
 
@@ -155,7 +143,6 @@ const deckCardWithDescriptionClub = [
         cardHoverStyle={["border-accent"]}
         gallery={deckCardWithDescriptionFacility}
         id="campus-facility2"
-        description={false}
       />
     </div>
     <div class="pt-[50px]" />
@@ -195,7 +182,7 @@ const deckCardWithDescriptionClub = [
         </div>
         <div class="pt-[32px]" /> 
         <div class="cursor-pointer" data-modal-target="campus-facility1" data-target-deck="deck-campus-facility1">
-          <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-bold'>VIEW ALL CLUBS</Text>
+          <Text type="sm" class='text-[18px] uppercase text-accentDark tracking-[1.8px] underline font-[600]'>VIEW ALL CLUBS</Text>
         </div>
       </div>
 
@@ -204,7 +191,6 @@ const deckCardWithDescriptionClub = [
         cardHoverStyle={["border-accent"]}
         gallery={deckCardWithDescriptionClub}
         id="campus-facility1"
-        description={false}
       />
     </div>
 

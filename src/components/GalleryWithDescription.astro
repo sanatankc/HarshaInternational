@@ -26,7 +26,7 @@ const gallery = props.gallery
       <div class="text-center">
         <Text type="h4" class="text-white max-md:text-[18px] font-bold" data-caption-id={slideId} data-slides-captions={[gallery.map(slide => slide.caption)]}>{gallery[0].caption}</Text>
         <div class="p-1" />
-        <Text type="base" class="text-[#F6D58D] max-md:hidden" data-description-id={slideId} data-slides-description={gallery.map(slide => slide.description).join('___')}>{gallery[0].description}</Text>
+        <Text type="base" class="!text-white max-md:hidden" data-description-id={slideId} data-slides-description={gallery.map(slide => slide.description).join('___')}>{gallery[0].description}</Text>
       </div>
       <div
         data-slide-nb
@@ -39,6 +39,6 @@ const gallery = props.gallery
       </div>
     </div>
     <div class="max-md:pt-2"></div>
-    <Text type="base" class="text-[#F6D58D] max-md:block hidden max-md:text-center" data-description-id={slideId} data-slides-description={gallery.map(slide => slide.description).join('___')}>{gallery[0].description}</Text>
+    <Text type="base" class="!text-white max-md:block hidden max-md:text-center" data-description-id={slideId} data-slides-description={gallery.map(slide => slide.description).join('___')}>{gallery[0].description}</Text>
   </div>
 </Gallery>

@@ -1,3 +1,12 @@
+:root {
+  --swiper-pagination-color: #6B63D1;
+  --swiper-pagination-bullet-inactive-color: rgba(28,28,28,0.2);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 7px;
+}
+
+
 html {
   color: black;
   font-family: 'Proxima Nova', sans-serif;

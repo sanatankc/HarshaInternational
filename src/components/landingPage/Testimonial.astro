@@ -12,29 +12,33 @@ import HarshaTestimonial1 from '../../images/HarshaTestimonial1.jpg'
 import HarshaTestimonial2 from '../../images/HarshaTestimonial2.jpg'
 import HarshaTestimonial3 from '../../images/HarshaTestimonial3.jpg'
 
+import vedanta from '../../images/testimonial/vedanta.jpg'
+import nikhil from '../../images/testimonial/nikhil.jpg'
+import yash from '../../images/testimonial/yash.jpg'
 import TestimonicalCard from './TestimonialCard.astro';
 
 import YoutubeEmbed from '../YoutubeEmbed.astro'
 
+
 const testimonials = [
+  {
+    image: vedanta,
+    quote: "I feel proud that my daughter is a part of such an elite institution where they are taught by great teachers, whose teaching goes way beyond the classroom. Chairman Sir is known for his wonderful administration and the high achievements of the Institutions he is in charge of. HIPS focusses on the overall development of the child. I’m pleased with the fact that my child is growing not only academically, but also in areas of dance, music, craft, etc. <br/><br/> The school is providing her with great opportunities to showcase her talent, the faculty is positive and motivating. Teaching Patterns for the kids are always exciting and new. The school also celebrates every festival with great enthusiasm. I am so glad that we chose HIPS for daughter. I am very happy to see my daughter’s growth in a fun way. As a parent, I keenly observe the efforts taken by all. Thanks, Harsha International Public School!!",
+    author: 'Savitha Kumaran',
+    role: 'Parent of Nikhil Kumaran (Grade 12)'
+  },
     {
-      image: HarshaTestimonial1,
-      quote: "Education is that which brings out the real talent and moulds the behavior of the student. This is exactly what our Harsha International Public School does by making our kids take part in various activities like exhibitions, Olympiads, drawing, dance, etc.",
+      image: nikhil,
+      quote: "The school has been providing the best education a student would need and it’s best school around. The management and the teachers here are focused on the betterment, well-being and overall development of the students from the very beginning of a student’s schooling. It’s a proud thing to say that both my kids studied at Harsha International Public School and that it’s their alma mater.",
       author: 'Prashant',
       role: 'Parent of Arya and Arpitha (Grade 3)'
     },
     {
-      image: HarshaTestimonial2,
-      quote: "I think that the school is great for my child. My child’s progress is amazing, he really enjoys coming to school. He comes home and talks about what he is being taught and the teachers have supported and cared for my child. Overall, my child has progressed massively.",
-      author: 'Madhu Pujar',
-      role: 'Parent of Samarth Pujar (Grade 1)'
+      image: yash,
+      quote: "We have witnessed massive and exponential development in my son. he is so blessed to have teachers such as the ones in HIPS and I feel exceptionally obliged to have my son studying in HIPS. Thanks for your endurance, quality care, enthusiasm, diligent efforts and passion you provide each and every day. My son feels very comfortable and he tries to follow his teacher as a role model at home.",
+      author: 'Aman Choudhary',
+      role: 'XII Science'
     },
-    // {
-    //   image: HarshaTestimonial3,
-    //   quote: "The academics are exceptional but even better the character development program. The teachers are true mentors and are loving and supportive, always accessible to guide us.",
-    //   author: 'Aman Choudhary',
-    //   role: 'XII Science'
-    // },
   ]
 
 ---
@@ -74,10 +78,24 @@ const testimonials = [
       background: 'linear-gradient(to left, rgb(3, 55, 112) 0%, rgb(162, 205, 251) 100%)'
     }}></div>
 
+    <div class="pt-[48px]" />
+
+    <TestimonicalCard
+        quote={testimonials[0].quote}
+        author={testimonials[0]?.author}
+        role={testimonials[0]?.role}
+        image={testimonials[0].image}
+        ctaText={testimonials[0].ctaText}
+        ctaLink={testimonials[0].ctaLink}
+        className="bg-transparent"
+        imageWidth={450}
+        imageHeight={450}
+        imageClass="min-w-[435px] max-md:min-w-[unset] !max-h-[unset]"
+    />
     <div class="flex flex-row gap-7 max-sm:flex-col max-sm:gap-0 mt-16 max-md:mt-2">
-      {testimonials.map(item => {
+      {[testimonials[1], testimonials[2]].map(item => {
         return (
-          <TestimonicalCard 
+          <TestimonicalCard
               quote={item.quote}
               author={item?.author}
               role={item?.role}
@@ -94,8 +112,6 @@ const testimonials = [
     <div class="w-[70%] relative left-[5%] h-[2px] self-start" style={{
       background: 'linear-gradient(to right, rgb(3, 55, 112) 0%, rgb(162, 205, 251) 100%)'
     }}></div>
-
-    <!-- <iframe width="330" height="186" src="https://www.youtube.com/embed/" title="Glentree Student Testimonial | Glentree Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
   
     <!-- <YoutubeEmbed embedId={'d-A17Q46EvI'} videoId='0' /> -->
     <YoutubeEmbed embedId={'GjJE1dh_wA4'} videoId='1' />
