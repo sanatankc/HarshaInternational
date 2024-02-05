@@ -6,7 +6,9 @@
   --swiper-pagination-bullet-horizontal-gap: 7px;
 }
 
-
+body {
+  overflow-x: hidden;
+}
 html {
   color: black;
   font-family: 'Proxima Nova', sans-serif;
