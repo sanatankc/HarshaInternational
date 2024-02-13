@@ -111,7 +111,7 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
       
         <SelectPill
           placeholder="Select Grade"
-          id={"grade-select"}
+          id={"grade"}
           title="Please select a grade"
           options={[
             'Nursery',
@@ -120,7 +120,7 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
             'PU (Science)',
             'PU (Commerce)',
           ]}
-          name={"grade-select"}
+          name={"grade"}
           required
         />
 
@@ -207,15 +207,15 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
       loading = true
       const formData = new FormData(e.target as HTMLFormElement);
       
-      const grade1 = formData.get('grade1')
-      const grade2 = formData.get('grade2')
+      // const grade1 = formData.get('grade1')
+      // const grade2 = formData.get('grade2')
       // const grade3 = formData.get('grade3')
       // const grade = grade1 || grade2 || grade3
-      const grade = grade1 || grade2
+      // const grade = grade1 || grade2
       formData.append('form-name', 'register-form');
-      formData.delete("grade1")
-      formData.delete("grade2")
-      formData.append("grade", grade)
+      // formData.delete("grade1")
+      // formData.delete("grade2")
+      // formData.append("grade", grade)
 
 
       // append everything in urlsearchparams to formData
@@ -250,14 +250,14 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
         const phone = await convertToSHA256(formData.get('phone'))
         const parentName = await convertToSHA256(formData.get('parentName'))
 
-        // console.log('fbq -->', fbq)
-        fbq('track', 'CompleteRegistration', {
-          value: 0.00,
-          currency: 'INR',
-          em: email,
-          ph: phone,
-          fn: parentName,
-        })
+        // // console.log('fbq -->', fbq)
+        // fbq('track', 'CompleteRegistration', {
+        //   value: 0.00,
+        //   currency: 'INR',
+        //   em: email,
+        //   ph: phone,
+        //   fn: parentName,
+        // })
         window.gtag_report_conversion()
         document.getElementById('register-form-container-desktop').classList.add('form-completed')
       }
