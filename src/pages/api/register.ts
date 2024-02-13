@@ -36,7 +36,7 @@ export const POST: APIRoute = async ({ request }) => {
   const QueryContactSourceID = sources[utmSource] || null;
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbz3c0TfOjZtKOB4hSSLR2Iv7S4nbkIcpWk2y8DRs_Ff4vRcoiqE-9Ub8KpcAyKZBXJP/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbyPMhwN03oGSKB5tnv-xrOXYjEiVJ8EwZGtQMyg2xJd0a_zdfXgpToLKa3oUvvXqFQLjA/exec', {
       method: 'POST',
       body: formData
     });

@@ -117,8 +117,8 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
             'Nursery',
             'LKG',
             'UKG',
-            'Grade 1',
-            'Grade 11',
+            'PU (Science)',
+            'PU (Commerce)',
           ]}
           name={"grade-select"}
           required
@@ -231,6 +231,7 @@ console.log("apiReponse -->", JSON.stringify(apiResponse.branches, null, 2))
         method: "POST",
         body: formData,
       });
+
       const data = await response.json();
       document.querySelector('.apply-now-register-button').classList.remove('loading')
       loading = false
